@@ -1,7 +1,7 @@
 
-## LibfTester
+# LibfTester
 
-# Project still unfinished but its already available
+## Project still unfinished but its already available
 for now it does not handle SIGSEV but it is a work in progress!
 
 This is a test for 42school libft project, I plan to add more tests on the future, but for now its a work in progress.
