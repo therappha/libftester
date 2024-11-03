@@ -8,8 +8,7 @@ if find . -name "libft.a" | grep -q "libft.a"; then
     echo "Cloning 'therappha's libftester'"
     git clone https://github.com/therappha/libftester.git
     echo "bulding tests..."
-    ./libftester/make
-    ./libftester/test
+   ( cd libftester; make test )
     cd ..
     echo "Deleting libftester!..."
     rm -rf libftester
