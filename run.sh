@@ -7,7 +7,6 @@ if find . -name "libft.a" | grep -q "libft.a"; then
     echo -e "${GREEN}libft.a built! Executing tests...${RESET}"
     echo "Cloning 'therappha's libftester'"
     git clone https://github.com/therappha/libftester.git
-    cd libftester
     echo "bulding tests..."
     ./libftester/make
     ./libftester/test
