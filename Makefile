@@ -3,7 +3,7 @@ LIBFT  = $(LIBFT_SRC)/libft.a
 CC = cc
 CFLAGS = -Wall -Wextra
 INCLUDES = includes/
-TARGET = tests
+TARGET = test
 SRCS = $(wildcard tests/*.c)
 
 all: $(TARGET)

@@ -9,13 +9,12 @@ if find . -name "libft.a" | grep -q "libft.a"; then
     git clone https://github.com/therappha/libftester.git
     cd libftester
     echo "bulding tests..."
-    make
-    ./tests
+    ./libftester/make
+    ./libftester/test
     cd ..
     echo "Deleting libftester!..."
     rm -rf libftester
     make fclean
-    fi
 else
     echo -e "${RED}Error: libft.a not found!${RESET}"
 fi
