@@ -2,6 +2,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 RESET='\033[0m'
+original_dir=$(pwd)
 make re
 if find . -name "libft.a" | grep -q "libft.a"; then
     echo -e "${GREEN}libft.a built! Executing tests...${RESET}"
@@ -11,7 +12,8 @@ if find . -name "libft.a" | grep -q "libft.a"; then
    ( cd libftester; make test )
     (cd libftester; ./test)
     echo "Deleting libftester!..."
-    (cd .. ; make fclean)
+    cd "$original_dir"
+    make fclean
     rm -rf libftester
 else
     echo -e "${RED}Error: libft.a not found!${RESET}"
