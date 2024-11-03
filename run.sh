@@ -11,7 +11,7 @@ if find . -name "libft.a" | grep -q "libft.a"; then
    ( cd libftester; make test )
     cd ..
     echo "Deleting libftester!..."
-    rm -rf libftester
+    rm -rf "$(pwd)/libftester"
     make fclean
 else
     echo -e "${RED}Error: libft.a not found!${RESET}"
