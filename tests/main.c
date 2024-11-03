@@ -87,6 +87,6 @@ int	main(void)
 	}
 	sleep(wait_time);
 	if (!failed)
-		printf( "\n\n -------- CONGRATULATIONS, YOU PASSED ALL TESTS!!! -------- ");
+		printf( "\n\n -------- CONGRATULATIONS, YOU PASSED ALL TESTS!!! -------- \n");
 }
 
