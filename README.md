@@ -8,7 +8,6 @@ This is a test for 42school libft project, I plan to add more tests on the futur
 
 ## Usage
 You can quickly set up and run the libft tester by using the following command in your libft folder.
-
+### This command will download, execute and delete the test itself directly from the libft folder.
 ```bash
-# This command will download, execute and delete the test itself directly from the libft folder.
 bash -c 'curl -sSL https://raw.githubusercontent.com/therappha/libftester/master/run.sh | bash'
