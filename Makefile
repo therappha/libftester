@@ -1,4 +1,4 @@
-LIBFT_SRC ?= $(shell pwd)
+LIBFT_SRC ?= $(shell dirname $(shell pwd))
 CC = cc
 CFLAGS = -Wall -Wextra
 INCLUDES = $(LIBFT_SRC)
